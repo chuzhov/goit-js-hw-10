@@ -15,10 +15,11 @@ body {
   color: #212121;
   line-height: 1.5;
 
+  background-image: linear-gradient(to right, #b8e4f3, #79a6e0 );
 }
 
 .wrapper {
-  display: inline-block;
+  display: block;
   font: inherit;
   padding: 10px 10px;
   width: 600px;
@@ -27,20 +28,52 @@ body {
 }
 
 #search-box {
+  padding: 5px 25px 5px 15px;
+  
+  height: 2rem;
+  width: 100%;
+
   border-radius: 22px;
+
 }
 
-.country-name {
-  font-size: 1.5ren;
+.input-wrapper {
+  position: relative;
 }
-.country-data {
+
+.input-wrapper::after {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  width: 26px; height: 26px;
+  content: '';
+
+  background-image: url("../img/globe-with-search-icon_1937552.jpg");
+  background-size: 26px 26px;
+  background-position: center;
+  background-color: transparent;
+  
+}
+
+.country__name {
+  margin-left: 1rem; margin-right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.country__data {
+  margin: 0.5rem 0;
   font-weight: 500;
 }
-.country-text {
-  font-weight: 400px;
+.country__text {
+  margin-left: 1rem;
+  font-weight: 600;
 }
 
 .country-list {
+  
+  margin-left: 0px;
+  padding-left: 0px;
+
   list-style: none;
 
 }

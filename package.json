@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://chuzhov/goit-js-hw-10",
   "scripts": {
-    "start": "parcel src/*.html -p 1234 --open",
+    "start": "parcel src/*.html -p 9999 --open",
     "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
   },
   "repository": {
